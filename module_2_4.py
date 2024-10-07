@@ -7,12 +7,13 @@ for i in numbers:
         if i % j == 0:
              is_prime = False
              not_primes.append(i)
-             print('Not Primes:',not_primes)
              break
-        if is_prime:
+
+        elif is_prime:
              primes.append(i)
-             print('Primes:',primes)
-             continue
+             
 
 
 
+print('Primes:',primes)
+print('Not Primes:',not_primes)
