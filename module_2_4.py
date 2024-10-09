@@ -6,14 +6,11 @@ for i in numbers:
     for j in range(2,i):
         if i % j == 0:
              is_prime = False
-             not_primes.append(i)
              break
-
-        elif is_prime:
+        is_prime = True
+    if is_prime and i!=1:
              primes.append(i)
-             
-
-
-
+    if is_prime == False and i!=1:
+             not_primes.append(i)
 print('Primes:',primes)
 print('Not Primes:',not_primes)
